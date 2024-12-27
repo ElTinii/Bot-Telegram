@@ -24,6 +24,7 @@ async def help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
         "Les comendes disponibles son \n"
         "/start - Inicia el bot\n"
         "/help - Mostra aquest missatge\n"
+        "/mostrarTenda - Mostra tots els productes disponibles\n"
         "/producte - Mostra l'informacio important d'un producte\n"
         "/imatge - Mostra la imatge d'un producte\n"
         "/afegirproducte - Afegeix un producte al carrito\n"
@@ -107,6 +108,20 @@ async def acabarCompra(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
     carrito.clear() 
     await update.message.reply_text("Compra finalitzada. Pasi per caixa per pagar.")
 
+async def mostrarTenda(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
+    for p in productes.find():
+        await context.bot.send_photo(
+            chat_id=update.effective_chat.id,
+            photo=p['imatge'],
+            caption=(
+                f"ID: {p['id']} \n"
+                f"Nom: {p['nom']}\n"
+                f"Preu: {p['preu']}\n"
+            )
+        )
+    await update.message.reply_text("Per comprar un producte utilitza la comanda \n /afegirproducte IDProducte Quantitat")
+
+
 def main():
     # declara una constant amb el access token que llegeix de token.txt
     TOKEN = open('./token.txt').read().strip()
@@ -120,6 +135,7 @@ def main():
     application.add_handler(CommandHandler('afegirproducte', afegirproducte))
     application.add_handler(CommandHandler('mostrarCarrito', mostrarCarrito))
     application.add_handler(CommandHandler('acabarCompra', acabarCompra))
+    application.add_handler(CommandHandler('mostrarTenda', mostrarTenda))
     application.run_polling()
 
 
