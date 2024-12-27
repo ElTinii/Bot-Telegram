@@ -2,8 +2,9 @@
 
 ## Requeriments previs
 
-    ELs requeriments previs son el bot del telegram i el pymongo 
-    ![alt text](./imatges/image10.png)
+ELs requeriments previs son el bot del telegram i el pymongo 
+
+![alt text](./imatges/image10.png)
 ## Explicacio funcions
 1. Funcio **/start** 
 
