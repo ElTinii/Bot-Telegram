@@ -9,7 +9,7 @@
 
     Aquesta funcio el que fa es retornar el llistat de comandes disonibles amb una petita explicacio del que fa cada una
 
-    ![alt text](image.png)
+    ![alt text](./imatges/image.png)
 
 3. Funcio **/producte**
 
@@ -27,24 +27,24 @@
 
     Aquesta funcio agafa el id i el numero de productes indicats, els afegeix al carrito de la compra i et mostra un petit resum
 
-    ![alt text](image2.png)
+    ![alt text](./imatges/image2.png)
     
 6. Funcio **/mostrarCarrito**
 
     Aquesta funcio agafa tot el que s'ha afegit al carrito i et mostra un resum de cada producte amb el preu final de cada un i al final de tot et mostra el preu final de tots els productes junts
 
-    ![alt text](image3.png)
+    ![alt text](./imatges/image3.png)
 
 7. Funcio **/acabarCompra**
 
     Aquesta funcio es una de les extra i el que fa es treure totes les dades del carrito i et mostra un petit missatge
 
-    ![alt text](image4.png)
+    ![alt text](./imatges/image4.png)
 
 8. Funcio **/mostrarTenda**
 
     Aquesta funcio mostra per pantalla tots els productes que hi ha a la tenda, el seu id i la seva imatge tambe
 
-    ![alt text](image8.png)
+    ![alt text](./imatges/image8.png)
 
-    ![alt text](image9.png)
+    ![alt text](./imatges/image9.png)
