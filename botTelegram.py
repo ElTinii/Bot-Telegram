@@ -14,8 +14,8 @@ for p in productes.find():
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Inform user about what this bot can do"""
     await update.message.reply_text(
-        "Quina comanda vols fer? \n"
-        "Si necesitas alguna i no saps com es fa utilitza la comanda - /help"
+        "Benvingut a la nostra tenda \n"
+        "Si necesitas alguna comanda i no saps com es fa utilitza la comanda - /help"
     )
 
 async def help(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
