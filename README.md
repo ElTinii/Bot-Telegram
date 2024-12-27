@@ -1,4 +1,10 @@
 # Explicacio practica telegram
+
+## Requeriments previs
+
+    ELs requeriments previs son el bot del telegram i el pymongo 
+    ![alt text](./imatges/image10.png)
+## Explicacio funcions
 1. Funcio **/start** 
 
     Aquesta funcio el que fa es iniciar l'aplicacio amb un missatge de benvinguda i la sugerencia de la comanda /help
